@@ -1,0 +1,175 @@
+.container1 {
+    margin-top: 1.5cm;
+    overflow-y: scroll; /* 세로 스크롤 추가 */
+    height: calc(100vh - 1.5cm); /* 화면 높이에 따라 스크롤이 나타나도록 설정 */
+  }
+
+  .rectangle2 {
+    position: relative;
+    width: 100%;
+    height: 5cm;
+    background-image: url('C:\Users\eunch\Desktop\your_perfume\public/images/diol_logo.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+  .text1 { /* Your Perfume */
+    position: absolute;
+    top: 14px;
+    left: 0.7cm;
+    font-size: 12pt;
+    line-height: 20pt;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .text2 { /* 마이페이지 */
+    position: absolute;
+    top: 14px;
+    right: 0.7cm;
+    font-size: 12pt;
+    line-height: 20pt;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .text3 {
+    position: absolute;
+    top: 14px;
+    right: 3.3cm;
+    font-size: 12pt;
+    line-height: 20pt;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .text4 {
+    position: absolute;
+    top: 14px;
+    right: 5.2cm;
+    font-size: 12pt;
+    line-height: 20pt;
+    color: black;
+    font-weight: 600;
+    cursor:pointer;
+  }
+  
+  .text5 {
+    position: absolute;
+    top: 14px;
+    right: 6.5cm;
+    font-size: 12pt;
+    line-height: 20pt;
+    color: black;
+    font-weight: 600;
+  }
+  
+  .text6 {
+    position: absolute;
+    cursor:pointer;
+    top: 14px;
+    right: 7.8cm;
+    font-size: 12pt;
+    line-height: 20pt;
+    color: black;
+    font-weight: 600;
+  }
+  
+
+  .text9 { /* Your Perfume */
+    position: absolute;
+    top: 300px;
+    left: 0.7cm;
+    font-size: 18pt;
+    line-height: 20pt;
+    color: black;
+    font-weight: 600;
+  }
+
+.brand_image-container1 {
+    float: left; 
+    margin-left: 30px;
+    margin-top:110px;
+    width:1440px;
+    height: 308px;
+    box-sizing: border-box;
+  }
+
+
+  .brand-product_image1 {
+    float: left; 
+    width: 459px;
+    height: 308px;
+    box-sizing: border-box;
+  }
+
+  .brand-product_image2 {
+    float:left;
+    width: 459px;
+    height: 308px;
+    margin-left: 30px;
+    box-sizing: border-box;
+
+  }
+
+.brand-product_image3 {
+    float: left;
+    width: 459px;
+    height: 308px;
+    margin-left: 30px;
+    box-sizing: border-box;
+  }
+
+.brand-product_image1 img,
+.brand-product_image2 img,
+.brand-product_image3 img {
+  width: 100%;
+  height: auto;
+}
+
+.brand-product_name-container1 {
+    float: left; 
+    margin-left: 30px;
+    width:1440px;
+    height: 80px;
+    box-sizing: border-box;
+  }
+
+  .brand-product_name2-1 {
+    float: left;
+    width: 433px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left:13px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .brand-product_name2-2 {
+    float: left;
+    width: 433px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 58px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .brand-product_name2-3 {
+    float: left;
+    width: 433px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 58px;
+    box-sizing: border-box;
+    text-align: center;
+    /*border: 1px solid #000;*/
+  }
+
+  .brand-product_name2-1,
+  .brand-product_name2-2,
+  .brand-product_name2-3 {
+    font-size: 14pt; /* 글씨 크기 설정 */
+    font-weight: bold;
+}

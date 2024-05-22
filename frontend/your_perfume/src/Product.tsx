@@ -1,25 +1,82 @@
 // Product.tsx
 
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import './topbar.css';
 import './Product.css';
 import { useNavigate } from 'react-router-dom';
 
+const brands = [
+  "디올", "샤넬", "메종", "구찌", "포맨트"
+];
 
 function Product() {
 
   const navigate = useNavigate();
 
+  const [showBrands, setShowBrands] = useState(false);
+  const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
+  const timerRef = useRef<number | null>(null);
+
   function goToHomePage() {
     navigate('/'); // '/' 경로로 이동합니다.
   }
+
+  function goToBrandPage() {
+    navigate('/Brand');
+  }
+
+  const handleMouseEnter = () => {
+    timerRef.current = window.setTimeout(() => {
+      setShowBrands(true);
+    }, 200); // 0.2초 후에 브랜드 목록 표시
+  };
+
+  const handleMouseLeave = () => {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+    }
+    setShowBrands(false);
+  };
+
+  const handleBrandChange = (brand: string) => {
+    if (brand === '디올') {
+      goToBrandPage();
+    } else {
+      setSelectedBrands(prevState =>
+        prevState.includes(brand)
+          ? prevState.filter(b => b !== brand)
+          : [...prevState, brand]
+      );
+    }
+  };  
+
   return (
     <div className="container1">
       <div className="text1">Your Perfume</div>
       <div className="text2">마이페이지</div>
       <div className="text3">Unique</div>
       <div className="text4">검색</div>
-      <div className="text5">메뉴</div>
+      <div className="text5"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        메뉴
+        {showBrands && (
+          <div className="brand-dropdown">
+            {brands.map((brand, index) => (
+              <div key={index} className="brand-item">
+                <input
+                  type="checkbox"
+                  id={`brand-${index}`}
+                  checked={selectedBrands.includes(brand)}
+                  onChange={() => handleBrandChange(brand)}
+                />
+                <label htmlFor={`brand-${index}`}>{brand}</label>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
       <div className="text6" onClick={goToHomePage}>홈</div>
 
       <div className="product-top-container">

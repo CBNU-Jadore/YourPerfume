@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home.tsx';
 import SearchPage from './SearchPage.tsx';
 import Product from './Product.tsx'; // Product 컴포넌트를 import합니다.
+import Brand from './Brand.tsx';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/SearchPage" element={<SearchPage />} />
           <Route path="/Product" element={<Product />} /> {/* Product 경로를 추가합니다 */}
+          <Route path="/Brand" element={<Brand />} />
         </Routes>
       </BrowserRouter>
     </div>
