@@ -1,0 +1,133 @@
+.product-top-container {
+  width: 1200px;
+  height: 400px; /* 부모 컨테이너의 너비를 설정합니다. */
+  margin-left:100px;
+  margin-top: 100px;
+  overflow: auto; /* float 속성으로 인한 높이 문제를 해결합니다. */
+  /*border: 1px solid #000;*/
+}
+
+.product-top-container_left-container {
+  float: left; /* 왼쪽으로 정렬합니다. */  
+  width: 594px;
+  box-sizing: border-box;
+}
+
+.product-top-container_right-container {
+  float: right; /* 오른쪽으로 정렬합니다. */
+  width: 500px;
+  height: 400px;
+  box-sizing: border-box;
+  /*border: 1px solid #000;*/
+}
+
+.product-image1 {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-perfume-name1 {
+  font-size: 27pt; /* 글씨 크기 설정 */
+  font-weight: bold; /* 글씨 굵게 설정 */
+  margin-bottom: 10px; /* 텍스트 간의 간격 설정 */
+  /*text-align: center; /* 가운데 정렬 설정 */
+}
+
+.product-perfume-name2 {
+  margin-left:4px;
+  font-size: 12pt; /* 글씨 크기 설정 */
+  font-weight: normal; /* 글씨 보통 굵기 설정 */
+  margin-bottom: 40px;
+}
+
+
+.product-perfume_description-container {
+  width: 500px;
+  height: 270px; /* 부모 컨테이너의 너비를 설정합니다. */
+  overflow: auto; /* float 속성으로 인한 높이 문제를 해결합니다. */
+  background-color: rgb(231, 230, 230);
+}
+
+.product-perfume-description1 {
+  font-size: 12pt; /* 글씨 크기 설정 */
+  font-weight: normal;
+  margin-bottom: 17px; /* 글씨 보통 굵기 설정 */
+  margin-left:15px;
+  margin-top:10px;
+}
+
+.product-perfume-description2 {
+  font-size: 12pt; /* 글씨 크기 설정 */
+  font-weight: lighter; /* 글씨 보통 굵기 설정 */
+  margin-left:15px;
+  margin-bottom:53px;
+}
+
+.product-perfume-note1 {
+  font-size: 12pt; /* 글씨 크기 설정 */
+  font-weight: normal;
+  margin-bottom: 17px; /* 글씨 보통 굵기 설정 */
+  margin-left: 15px;
+  margin-top:10px;
+}
+
+.product-perfume-note2 {
+  font-size: 12pt; /* 글씨 크기 설정 */
+  font-weight: lighter;
+  margin-left: 15px;
+  margin-top:10px;
+}
+
+hr {
+  border: none; /* 기본 테두리 제거 */
+  border-top: 2px solid hsl(0, 2%, 75%); /* 위쪽에 1px 두께의 선 추가 */
+  margin-top: 45px; /* 상단 여백 설정 */
+  width:1330px;
+}
+
+.product-bottom-container{
+  width: 1200px;
+  height: 180px; /* 부모 컨테이너의 너비를 설정합니다. */
+  margin-left: 100px;
+  margin-top: 20px;
+  overflow: auto; /* float 속성으로 인한 높이 문제를 해결합니다. */
+}
+
+.product-bottom-container_name{
+  width: 1200px;
+  height: 35px; /* 부모 컨테이너의 너비를 설정합니다. */
+  overflow: auto; /* float 속성으로 인한 높이 문제를 해결합니다. */
+  font-size: 17pt;
+  font-weight: bold;
+}
+
+.product-bottom-container_perfume-image{
+  float: left; /* 왼쪽으로 정렬합니다. */  
+  width: 95px;
+  box-sizing: border-box;
+  margin-left: 14px;
+}
+
+.product-image2 {  /*비슷한 향수 이미지*/
+  max-width: 100%;
+  height: auto;
+}
+
+.product-bottom-container_perfume-name1{ 
+  width: 110px;
+  box-sizing: border-box;
+  margin-left: 130px;
+  margin-top: 15px;
+  font-size:13pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-bottom-container_perfume-name2{ 
+  width: 110px;
+  box-sizing: border-box;
+  margin-left: 130px;
+  margin-top: 10px;
+  font-size:13pt;
+  font-weight: lighter;
+}
