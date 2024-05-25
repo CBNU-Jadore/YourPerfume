@@ -60,7 +60,7 @@ function Product() {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        메뉴
+        브랜드
         {showBrands && (
           <div className="brand-dropdown">
             {brands.map((brand, index) => (

@@ -67,8 +67,9 @@
 
 .text6 {
   position: absolute;
+  padding-right:13px;
   top: 14px;
-  right: 7.8cm;
+  right: 9cm;
   font-size: 12pt;
   line-height: 20pt;
   color: black;
